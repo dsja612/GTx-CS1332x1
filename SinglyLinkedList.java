@@ -83,7 +83,7 @@ public class SinglyLinkedList<T> {
     public T removeFromFront() {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
         if (this.head == null) {
-            throw new NoSuchElementException("Data is null");
+            throw new NoSuchElementException("List is empty");
         }
         T val = this.head.getData();
         if (this.head == this.tail) {
@@ -107,7 +107,7 @@ public class SinglyLinkedList<T> {
     public T removeFromBack() {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
         if (this.head == null) {
-            throw new NoSuchElementException("Data is null");
+            throw new NoSuchElementException("List is empty");
         }
         T val = this.tail.getData();
         if (this.head == this.tail) {
